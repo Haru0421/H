@@ -11,20 +11,13 @@ console.log("main.js!!");
 $(document).ready(()=>{
 	console.log("Ready!!");
 
-//乱数を取得する
-    let rdm = Math.random();
-	console.log("乱数;",rdm);
-
-	//0~6までの整数を取り出したい
-	let num1 = rdm * 7;
-	console.log("num1:",num1);
-    
-	let num2 = Math.floor(num1);
-	console.log("num2:",num2);
-
-	//　画像のパスを作る
-	let path = "./images/om_" + num2 + ".png";
-
-	//画像を変えてみる
-	$("#my_img").attr("src",path);
+	//ボタンのクリックイベント
+	$("my_btn").click(()=>{
+		console.log("計算する");
+		const strVal = $("#my_input").val();//文字列取得
+		const numVal = parseIn(strVal);//文字列->数値
+		console.log("これを計算する",numVal);
+		//TODO：消費税計算電卓を完成させなさい
+    	
+	})
 });
