@@ -4,100 +4,34 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>Hello jQuery!!</title>
+	<title>ガソリン代の計算</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="./css/custom.css">
-
 </head>
 <body>
-	
-	<h1>消費税の計算</h1>
-
+	<h1>= ガソリン代の計算 =</h1>
 	<p>
-		<input type="text" id="my_input">
+		ガソリン価格:<input type="text" id="input_a">
 	</p>
 	<p>
-		<button id="my_btn">計算する</button>
+		走行距離:<input type="text" id="input_b">
 	</p>
 	<p>
-		消費税は<strong id="my_tax">*</strong>円
+		車の燃費:<input type="text" id="input_c">
 	</p>
 	<p>
-		税込価格<strong id="my_total">*</strong>
+		<button id="btn_calc">計算をする</button>
 	</p>
-		
-	
+	<p>
+		<strong id="msg_info">-</strong>
+	</p>
+	<p>
+		ガソリン代は:<strong id="msg_result">*</strong>円です
+	</p>
 	<!-- JavaScript -->
-	<script src="//cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.js"></script>
 	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.js"></script>
 	<script src="./main.js"></script>
-</body>
-</html>
-v<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>消費税の自動計算</title>
-
-  <!-- 【CDN参照URL：https://getbootstrap.jp/docs/4.3/getting-started/introduction/】 -->
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <script>
-
-  //税込を入力、税抜は自動計算
-  //＜body＞要素をon()を使ってchange()発動
-  $(function(){
-    $('body').on('change', '.taxExcluded', function() {
-      $(this).parent().parent().find('.automaticCalculation').text(Math.round(parseInt($(this).val()) * 110 / 100));
-    });
-  });
-
-  </script>
-</head>
-<body>
-  <form>
-    <table class="table table-bordered table-dark">
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">料金(税抜)</th>
-          <th scope="col">料金(税込)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td class="">
-            <input type="text" class="form-control taxExcluded" name="" placeholder="料金(税込)を入力してください">
-          </td>
-          <td><span class="automaticCalculation"></span></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td class="">
-            <input type="text" class="form-control taxExcluded" name="" placeholder="料金(税込)を入力してください">
-          </td>
-          <td><span class="automaticCalculation"></span></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td class="">
-            <input type="text" class="form-control taxExcluded" name="" placeholder="料金(税込)を入力してください">
-          </td>
-          <td><span class="automaticCalculation"></span></td>
-        </tr>
-      </tbody>
-    </table>
-  </form>
 </body>
 </html>
