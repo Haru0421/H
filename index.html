@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="./assets/favicon.ico">
-	<!--Style -->
-	<style type="text/css">body{margin:0px; padding:0px;}</style>
-	<!-- Framework -->
-	<script src="./libs/p5.min.js"></script>
-	<script src="./libs/p5.sound.min.js"></script>
-	<script src="./libs/planck.min.js"></script>
-	<script src="./libs/p5play.js"></script>
-	<!-- Sketch -->
-	<script src="./js/sketch.js"></script>
-	<!-- 「/static/js/...」を「static/js/...」等に変更-->
-<script defer="defer" src="static/js/main.f290cddc.js"></script>
-<link href="static/css/main.073c9b0a.css" rel="stylesheet">
-
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>PiyoTemplate</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png">PiyoTemplate
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+		<div class="container">
+			<h1>Bootstrapを始めよう</h1>
+			<h6>世界で一番人気のあるフロントエンドライブラリBootstrapで、モバイルファーストなレスポンシブウェブを素早くデザイン・カスタマイズできます。レスポンシブグリッドシステム、豊富なコンポーネント、強力なJavaScriptプラグインを備えています。</h6>
+			<button type="button" class="btn btn-primary">公式サイト</button>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<h1>Layout</h1>
+					<p>Bootstrapには強力なレイアウトシステムが存在します。先ずはコンテナとグリッドシステムについて理解しましょう。</p>
+				</div>
+				<div class="col-6">
+					<h1>Component</h1>
+					<p>Bootstrapには様々なコンポーネントが備わっています。必要に応じて使いこなしましょう。</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<h6>・<a href="#Container">Container</a></h6>
+					<h6>・Grid(Comming soon!)</h6>
+				</div>
+				<div class="col-6">
+					<div>・<a href="#guide">guide</a></div>
+                	<div>・<a href="#alerts-guide">Alerts guide</a></div>
+                	<div>・<a href="#card-guide">Card guide</a></div>
+                	<div>・<a href="#collapse-guide">Collapse guide</a></div>
+                	<div>・<a href="#accordion-guide">Accordion guide</a></div>
+					<div>・etc (Comming soon!!)</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
 </body>
 </html>
