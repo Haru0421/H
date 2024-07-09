@@ -4,48 +4,12 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>PiyoPricing</title>
+	<title>PiyoForm</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./css/custom.css">
-	<style>
-		.card-body ul {
-			text-align: left;
-			padding-left: 0;
-			list-style: none;
-		}
-		.card-body ul li {
-			margin-bottom: 10px;
-		}
-		.btn-block {
-			width: 100%;
-		}
-		table.table {
-			width: 100%;
-			margin: auto;
-			border-collapse: collapse;
-		}
-		table.table th, table.table td {
-			text-align: center;
-			vertical-align: middle;
-			padding: 15px;
-			border: 1px solid #dee2e6;
-		}
-		table.table th {
-			background-color: #f8f9fa;
-		}
-		table.table td {
-			background-color: #ffffff;
-		}
-		table.table tr:nth-child(even) td {
-			background-color: #f2f2f2;
-		}
-		.card-enterprise {
-			border: 2px solid #007bff;
-		}
-	</style>
 </head>
 <body>
 	
@@ -54,7 +18,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="./images/logo.png" alt="Logo"> PiyoPricing
+					<img src="./images/logo.png">PiyoForm
 				</a>
 			</div>
 		</nav>
@@ -63,113 +27,64 @@
 
 	<!-- Main(Start) -->
 	<main>
-		<div class="container text-center my-5">
-			<h1 class="mb-4">利用料金</h1>
-			<p class="mb-4">月額2,500円(税込)から使えるコワーキングスペースを、目的に合ったプランから選べます。</p>
-
-			<div class="row">
-				<div class="col-md-4">
-					<div class="card mb-4">
-						<div class="card-header">Free</div>
-						<div class="card-body">
-							<h2 class="card-title">¥0/月</h2>
-							<ul class="list-unstyled">
-								<li>1 users included</li>
-								<li>0 MB of storage</li>
-								<li>No support</li>
-								<li>Help center access</li>
-							</ul>
-							<button class="btn btn-outline-primary btn-block">利用を開始する</button>
-						</div>
-					</div>
+		<div class="container mt-5">
+			<h1>FormControl</h1>
+			<form>
+				<div class="form-group">
+					<label for="email">Email address</label>
+					<input type="email" class="form-control" id="email" value="　">
 				</div>
-				<div class="col-md-4">
-					<div class="card mb-4">
-						<div class="card-header">Pro</div>
-						<div class="card-body">
-							<h2 class="card-title">¥2,500/月</h2>
-							<ul class="list-unstyled">
-								<li>1 users included</li>
-								<li>2 GB of storage</li>
-								<li>Email support</li>
-								<li>Help center access</li>
-							</ul>
-							<button class="btn btn-primary btn-block">利用を開始する</button>
-						</div>
-					</div>
+				<div class="form-group">
+					<label for="exampleTextarea">Example textarea</label>
+					<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 				</div>
-				<div class="col-md-4">
-					<div class="card mb-4 card-enterprise">
-						<div class="card-header card text-white bg-primary">Enterprise</div>
-						<div class="card-body">
-							<h2 class="card-title">¥9,980/月</h2>
-							<ul class="list-unstyled">
-								<li>3 users included</li>
-								<li>2 TB of storage</li>
-								<li>Email support</li>
-								<li>Help center access</li>
-							</ul>
-							<button class="btn btn-primary btn-block">利用を開始する</button>
-						</div>
-					</div>
+				<div class="form-group">
+					<label for="exampleSelect">Open this select menu</label>
+					<select class="form-control" id="exampleSelect">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
 				</div>
-			</div>
-
-			<h2 class="mb-4">プランを比較</h2>
-			<table class="table">
-				<thead>
-					<tr>
-						<th scope="col"></th>
-						<th scope="col">Free</th>
-						<th scope="col">Pro</th>
-						<th scope="col">Enterprise</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row"></th>
-						<td>WiFi環境</td>
-						<td>✔</td>
-						<td>✔</td>
-						<td>✔</td>
-					</tr>
-					<tr>
-						<th scope="row"></th>
-						<td>ロッカー/ OA機器</td>
-						<td> </td>
-						<td>✔</td>
-						<td>✔</td>
-					</tr>	
-					<tr>
-						<th scope="row"></th>
-						<td>共有会議室</td>
-						<td> </td>
-						<td>✔</td>
-						<td>✔</td>
-					</tr>
-					<tr>
-						<th scope="row"></th>
-						<td>共有ワークスペース</td>
-						<td> </td>
-						<td>✔</td>
-						<td>✔</td>
-					</tr>
-					<tr>
-						<th scope="row"></th>
-						<td>専用ワークスペース</td>
-						<td> </td>
-						<td>✔</td>
-						<td>✔</td>
-					</tr>
-					<tr>
-						<th scope="row"></th>
-						<td>専用オフィス(秘書付き)</td>
-						<td> </td>
-						<td> </td>
-						<td>✔</td>
-					</tr>
-				</tbody>
-			</table>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+					<label class="form-check-label" for="defaultCheck1">
+						Default checkbox
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked>
+					<label class="form-check-label" for="defaultCheck2">
+						Checked checkbox
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+					<label class="form-check-label" for="exampleRadios1">
+						Default radio
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+					<label class="form-check-label" for="exampleRadios2">
+						Checked radio
+					</label>
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="defaultSwitch">
+					<label class="form-check-label" for="defaultSwitch">
+						Default switch
+					</label>
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="checkedSwitch" checked>
+					<label class="form-check-label" for="checkedSwitch">
+						Checked switch
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary mt-3">Submit</button>
+				<button type="reset" class="btn btn-secondary mt-3">Reset</button>
+			</form>
 		</div>
 	</main>
 	<!-- Main(End) -->
