@@ -4,22 +4,41 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>PiyoForm</title>
+	<title>PiyoOyip:Orange</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-	
 	<!-- Header(Start) -->
 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #8B0000;">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="./images/logo.png">PiyoForm
+					<img src="./images/logo.png" alt="Logo" class="rounded-circle mb-3" width="20" height="20">PiyoOyip:Orange
 				</a>
+				<!-- CollapseMenu(Button) -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#targetCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- CollapseMenu(Links) -->
+				<div class="collapse navbar-collapse justify-content-end" id="targetCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#my_portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#my_about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#my_contact">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
@@ -27,65 +46,73 @@
 
 	<!-- Main(Start) -->
 	<main>
-		<div class="container mt-5">
-			<h1>FormControl</h1>
-			<form>
-				<div class="form-group">
-					<label for="email">Email address</label>
-					<input type="email" class="form-control" id="email" value="　">
-				</div>
-				<div class="form-group">
-					<label for="exampleTextarea">Example textarea</label>
-					<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-				</div>
-				<div class="form-group">
-					<label for="exampleSelect">Open this select menu</label>
-					<select class="form-control" id="exampleSelect">
-						<option>Option 1</option>
-						<option>Option 2</option>
-						<option>Option 3</option>
-					</select>
-				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1">
-						Default checkbox
-					</label>
-				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked>
-					<label class="form-check-label" for="defaultCheck2">
-						Checked checkbox
-					</label>
-				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-					<label class="form-check-label" for="exampleRadios1">
-						Default radio
-					</label>
-				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
-					<label class="form-check-label" for="exampleRadios2">
-						Checked radio
-					</label>
-				</div>
-				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" id="defaultSwitch">
-					<label class="form-check-label" for="defaultSwitch">
-						Default switch
-					</label>
-				</div>
-				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" id="checkedSwitch" checked>
-					<label class="form-check-label" for="checkedSwitch">
-						Checked switch
-					</label>
-				</div>
-				<button type="submit" class="btn btn-primary mt-3">Submit</button>
-				<button type="reset" class="btn btn-secondary mt-3">Reset</button>
-			</form>
+		<div class="text-center p-5" id="my_key" style="background-color: #FFA500;">
+			<img src="./images/logo.png" alt="Avatar" class="rounded-circle mb-3" width="150" height="150">
+			<h1 class="mb-3">Piyo Oyip</h1>
+			<p class="lead">Web Engineer</p>
+			<p>言語: HTML/CSS/JavaScript</p>
 		</div>
+
+		<div class="container my-5" id="my_portfolio">
+			<h2 class="text-center mb-4">Demos</h2>
+			<div class="row">
+				<div class="col-md-4 text-center mb-4">
+					<div class="card h-100">
+						<div class="card-body">
+							<img src="./images/logo_html.png" alt="HTML5" class="img-fluid mb-3">
+							<h5 class="card-title">HTML</h5>
+							<p class="card-text">HyperText Markup Languageはマークアップ言語の一つで、主にWorld Wide Webにおいて、ウェブページを表現するために用いられます。</p>
+							<a href="#" class="btn btn-primary">Demo</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center mb-4">
+					<div class="card h-100">
+						<div class="card-body">
+							<img src="./images/logo_css.png" alt="CSS3" class="img-fluid mb-3">
+							<h5 class="card-title">CSS</h5>
+							<p class="card-text">CSSは、文書の構造と体裁を分離させるという理念を実現するために提唱されたスタイルシートの具体的な仕様の一つです。</p>
+							<a href="#" class="btn btn-primary">Demo</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center mb-4">
+					<div class="card h-100">
+						<div class="card-body">
+							<img src="./images/logo_javascript.png" alt="JavaScript" class="img-fluid mb-3">
+							<h5 class="card-title">JavaScript</h5>
+							<p class="card-text">JavaScriptはプログラミング言語であり、利用される場面はブラウザからサーバー、デスクトップからスマートフォンまで多岐にわたります。</p>
+							<a href="#" class="btn btn-primary">Demo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid py-5" id="my_about" style="background-color: #FFA500;">
+			<h2 class="text-center mb-4">About</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<p>世界で一番人気のあるフロントエンドライブラリBootstrapで、モバイルファーストなレスポンシブウェブを素早くデザイン・カスタマイズできます。レスポンシブグリッドシステム、豊富なコンポーネント、強力なJavaScriptプラグインを備えています。</p>
+				</div>
+				<div class="col-md-6">
+					<p>世界で一番人気のあるフロントエンドライブラリBootstrapで、モバイルファーストなレスポンシブウェブを素早くデザイン・カスタマイズできます。レスポンシブグリッドシステム、豊富なコンポーネント、強力なJavaScriptプラグインを備えています。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-5" id="my_contact">
+			<h2 class="text-center mb-4">Contact</h2>
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center">
+					<a href="mailto:example@example.com" class="d-inline-block mx-3"><i class="bi bi-envelope-fill" style="font-size: 2rem;"></i></a>
+					<a href="https://github.com/yourusername" target="_blank" class="d-inline-block mx-3"><i class="bi bi-github" style="font-size: 2rem;"></i></a>
+					<a href="https://twitter.com/yourusername" target="_blank" class="d-inline-block mx-3"><i class="bi bi-twitter" style="font-size: 2rem;"></i></a>
+					<a href="https://instagram.com/yourusername" target="_blank" class="d-inline-block mx-3"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+					<a href="https://facebook.com/yourusername" target="_blank" class="d-inline-block mx-3"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+				</div>
+			</div>
+		</div>		
 	</main>
 	<!-- Main(End) -->
 
@@ -107,6 +134,5 @@
 	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
 	<script src="./libs/bootstrap/popper.min.js"></script>
 	<script src="./libs/bootstrap/bootstrap.min.js"></script>
-	<script src="./main.js"></script>
 </body>
 </html>
