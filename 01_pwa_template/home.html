@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#4a90e2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4a90e2">
+    <meta name="apple-mobile-web-app-title" content="ポートフォリオ">
+    <link rel="apple-touch-icon" href="./pwa/icon152x152.png">
+    <link rel="manifest" href="./pwa/manifest.json">
+    <link rel="shortcut icon" href="./pwa/favicon.ico">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/libs/animate/animate.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <style>
+        body {
+            background: repeating-linear-gradient(
+                45deg,
+                #e3f2fd,
+                #e3f2fd 15px,
+                #bbdefb 15px,
+                #bbdefb 30px
+            );
+            color: #1F3A93;
+            display: flex; /* Flexboxの有効化 */
+            justify-content: center; /* 水平方向に中央揃え */
+            align-items: center; /* 垂直方向に中央揃え */
+            min-height: 100vh; /* ビューポート全体を占める */
+            margin: 0; /* 余白をリセット */
+        }
+        .container {
+            text-align: center; /* コンテンツを中央揃え */
+        }
+        .home-title {
+            font-size: 3rem;
+            margin-bottom: 0.5rem; /* h1の下部の間隔を小さく調整 */
+        }
+        .home-subtitle {
+            font-size: 1.5rem; /* サブタイトルのフォントサイズ調整 */
+            margin-top: 0; /* h1との隙間を詰める */
+        }
+        .card-container {
+            display: flex;
+            justify-content: center; /* カードを横方向に中央揃え */
+            gap: 3rem; /* カード間の間隔を設定 */
+            flex-wrap: wrap; /* 横幅が狭い場合に折り返しを許可 */
+            margin-top: 2rem; /* タイトルとカードの間隔を調整 */
+        }
+        .card {
+            width: 350px; /* カードの幅を設定 */
+            padding: 2rem; /* カードの内側のスペースを広げる */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd; /* 枠線を追加 */
+            border-radius: 10px; /* 角を少し丸くする */
+            text-align: center;
+            background-color: #73aef3; /* カード背景色 */
+            text-decoration: none; /* リンクの下線を削除 */
+            color: inherit; /* テキストカラーを継承 */
+            transition: transform 0.2s, box-shadow 0.2s; /* ホバー時のアニメーション */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* ホバー時に少し浮かせる */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-size: 2rem; /* タイトルを大きくする */
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="home-title">ポートフォリオ</h1>
+        <p class="home-subtitle">野田温史の趣味ポートフォリオへようこそ！</p>
+
+        <!-- Cards for navigation -->
+        <div class="card-container">
+            <a href="music.html" class="card">
+                <div class="card-body">
+                    <h2 class="card-title">好きな音楽</h2>
+                </div>
+            </a>
+
+            <a href="manga.html" class="card">
+                <div class="card-body">
+                    <h2 class="card-title">好きな漫画</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

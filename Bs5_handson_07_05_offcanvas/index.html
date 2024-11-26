@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>Offcanvas</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png">Offcanvas
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+
+		<div class="container pt-3">
+			<h1>オフキャンバス</h1>
+		</div>
+
+		<!-- リスト7-36 -->
+		<div class="container mt-5">
+			<!-- 切り替えボタン -->
+			<button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas">
+				切り替えボタン
+			</button>
+			<!-- オフキャンバス -->
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="exampleOffcanvas" aria-labelledby="exampleOffcanvasLabel">
+				<h5 class="offcanvas-header">
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</h5>
+			</div>
+		<div class="offcanvas-body">
+			<div>
+				オフキャンバスの本文が入ります。いろんなコントロールを配置することができます。
+			</div>
+			<div class="dropdown mt-3">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+					ドロップダウン
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<lii><a class="dropdown-item" href="#">アクション1</a></lii>
+					<lii><a class="dropdown-item" href="#">アクション2</a></lii>
+					<lii><a class="dropdown-item" href="#">アクション3</a></lii>
+				</ul>
+			</div>
+		</div>
+	    </div>
+
+		<!-- リスト7-37 -->
+		<div class="container mt-5">
+			<!-- 切り替えボタン -->
+			<button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#topOffcanvas">
+				上に表示
+			</button>
+			<button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#endOffcanvas">
+				右に表示
+			</button>
+			<button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#bottomOffcanvas">
+				下に表示
+			</button>
+			<!-- 上に配置 -->
+			<div class="offcanvas offcanvas-top" tabindex="-1" id="topOffcanvas" aria-labelledby="topOffcanvasLabel">
+				オフキャンバスを上に配置しました。
+			</div>
+			<!-- 右に配置 -->
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="endOffcanvas" aria-labelledby="endOffcanvasLabel">
+				オフキャンバスを右に配置しました。
+			</div>
+			<!-- 下に配置 -->
+			<div class="offcanvas offcanvas-bottom" tabindex="-1" id="bottomOffcanvas" aria-labelledby="bottomOffcanvasLabel">
+				オフキャンバスを下に配置しました。
+			</div>
+		</div>
+
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/popper.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

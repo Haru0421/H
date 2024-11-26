@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#4a90e2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4a90e2">
+    <meta name="apple-mobile-web-app-title" content="ポートフォリオ">
+    <link rel="apple-touch-icon" href="./pwa/icon152x152.png">
+    <link rel="manifest" href="./pwa/manifest.json">
+    <link rel="shortcut icon" href="./pwa/favicon.ico">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/libs/animate/animate.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <style>
+        body {
+            background: repeating-linear-gradient(
+                45deg,
+                #e3f2fd,
+                #e3f2fd 15px,
+                #bbdefb 15px,
+                #bbdefb 30px
+            );
+            font-family: Arial, sans-serif;
+            color: #1F3A93;
+            font-size: 18px; /* 全体のベースフォントサイズを調整 */
+        }
+        .navbar { background-color: #a7ccf6; }
+        .section-title {
+            font-size: 2.5rem; /* セクションタイトルを大きく */
+            color: #1F3A93;
+        }
+        .section-content, footer {
+            font-size: 1.3rem; /* セクション本文のサイズを大きく */
+            color: #1F3A93;
+        }
+        .highlight {
+            font-size: 2rem; /* バンド名の文字サイズも大きく */
+        }
+        /* セクションの背景色をブルーグレーに変更 */
+        .custom-section {
+            background-color: #73aef3; /* ブルーグレー */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 8rem; /* セクション間の余白を広げる */
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- Header(Start) -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">ポートフォリオ</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!-- Header(End) -->
+
+        <!-- Main(Start) -->
+        <main class="mt-5 pt-5">
+            <div class="container text-center">
+                <h1 class="section-title mt-4">ポートフォリオ - 野田温史</h1>
+                <p class="section-content">僕がよく聞いている音楽と好きな曲を３つ紹介します。</p>
+
+                                <!-- back number セクション -->
+                <section class="custom-section">
+                    <h2 class="section-title">back number</h2>
+                    <img src="./assets/images/back number.jpeg" alt="back number" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                    <p class="section-content">back numberはボーカル・ギターの清水依与吏、ベース・コーラスの小島和也、ドラムの栗原寿の3人で結成されています。</p>
+
+                    <!-- YouTube動画埋め込み -->
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GEqOLMXqOlM?si=OnhVJ99VCK9lzg-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">クリスマスソング</p>
+                    </div>
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/InSL08VJOxM?si=OLD3ERyr00Hyy4Hb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">わたがし</p>
+                    </div>
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fgGGPSROc0M?si=NkWmRMXEgftdJWAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">幸せ</p>
+                    </div>
+
+                    <p class="section-content">男性目線の歌だけではなく女性目線の歌も共感できることが多く、女性人気が高いです。</p>
+                </section>
+
+                <!-- adieu セクション -->
+                <section class="custom-section">
+                    <h2 class="section-title">adieu</h2>
+                    <img src="./assets/images/adieu.jpeg" alt="adieu" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                    <p class="section-content">adieuは女優の上白石萌歌さん。</p>
+
+                    <!-- YouTube動画埋め込み -->
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YTKuKuD-gmE?si=-b3-T4w4GJOkft59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">ナラタージュ</p>
+                    </div>
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HEOx81i2Jxk?si=cM4ApJ4_IL8RHOgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">天気</p>
+                    </div>
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/J1dox5WFMeI?si=8zlEXukT1thAsMlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">強がり</p>
+                    </div>
+
+                    <p class="section-content">adieuはとても綺麗で爽やかな歌声で癖がなく、耳にスッと入ってきて聞きやすいです。</p>
+                </section>
+
+                <!-- スピッツ セクション -->
+                <section class="custom-section">
+                    <h2 class="section-title">スピッツ</h2>
+                    <img src="./assets/images/Spitz.jpeg" alt="スピッツ" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                    <p class="section-content">スピッツはボーカルの草野正宗、ギターの田村明浩、ベースの紺野知恵、ドラムの山内総一郎で構成されています。</p>
+
+                    <!-- YouTube動画埋め込み -->
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QzJ_QUc-ygk?si=qEqRGvrJetdpxR7R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">冷たい頬</p>
+                    </div>
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l1-D43s6D_A?si=nVyUC9G81tPBMGgx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">スカーレット</p>
+                    </div>
+                    <div class="video-wrapper" style="margin: 40px 0;">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AMWDAuPx26Q?si=-xR5QKY-_4N8MJ_i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-size: 2.0rem;">運命の人</p>
+                    </div>
+
+                    <p class="section-content">草野さんにしか表現できない言い回しや深い歌詞が魅力的です。歌声もとても綺麗で歳をとっても衰えない美声です。</p>
+                </section>
+
+                <div class="card-container">
+                    <a href="home.html" class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">ホーム画面に戻る</h2>
+                        </div>
+                    </a>
+                </div>
+        </main>
+        <!-- Main(End) -->
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./assets/libs/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="./assets/libs/bootstrap-5.2.3/js/bootstrap.min.js"></script>
+    <script src="./assets/libs/axios/axios.min.js"></script>
+    <script src="./assets/libs/howler/howler.min.js"></script>
+    <script src="./assets/libs/pushjs/push.min.js"></script>
+    <script src="./assets/js/utility.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
