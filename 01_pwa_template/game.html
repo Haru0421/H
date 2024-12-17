@@ -18,57 +18,73 @@
     <link rel="stylesheet" href="./assets/css/custom.css">
     <style>
         body {
-            background: repeating-linear-gradient(
-                45deg,
-                #e3f2fd,
-                #e3f2fd 15px,
-                #bbdefb 15px,
-                #bbdefb 30px
-            );
+            background: linear-gradient(
+            135deg,
+            #81d4fa 0%,   /* 明るい青 */
+            #b3e5fc 25%,  /* パステルブルー */
+            #e1f5fe 50%,  /* 淡い空色 */
+            #bbdefb 75%,  /* 淡い水色 */
+            #90caf9 100%  /* 少し濃い青 */
+        );
+
             font-family: Arial, sans-serif;
             color: #1F3A93;
-            font-size: 18px;
+            font-size: 18px; /* 全体のベースフォントサイズを調整 */
         }
         .navbar { background-color: #a7ccf6; }
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.5rem; /* セクションタイトルを大きく */
             color: #1F3A93;
         }
         .section-content, footer {
-            font-size: 1.3rem;
+            font-size: 1.3rem; /* セクション本文のサイズを大きく */
             color: #1F3A93;
         }
         .highlight {
-            font-size: 2rem;
+            font-size: 2rem; /* バンド名の文字サイズも大きく */
         }
+        /* セクションの背景色をブルーグレーに変更 */
         .custom-section {
-            background-color: #73aef3;
+            background-color: #73aef3; /* ブルーグレー */
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 8rem;
-        }
-        .back-to-home {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
+            margin-bottom: 8rem; /* セクション間の余白を広げる */
         }
 
-        .back-to-home .btn {
-            font-size: 1.2rem;
-            padding: 10px 20px;
-            background-color: #4a90e2;
-            color: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s;
+        /* カードデザイン */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
         }
 
-        .back-to-home .btn:hover {
-            background-color: #357ab7;
+        .card {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #90caf9; /* カードの背景色 */
+            color: #ffffff; /* テキストの色 */
+            padding: 1.5rem 2rem;
+            border-radius: 10px; /* 角を丸くする */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* カードの影 */
+            transition: all 0.3s ease; /* ホバー時のアニメーション */
         }
 
+        .card:hover {
+            background-color: #42a5f5; /* ホバー時の色 */
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* ホバー時の影を濃く */
+            transform: translateY(-4px); /* ホバー時に少し浮き上がる */
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -112,11 +128,21 @@
                 </section>
 
                 <!-- 他の好きな漫画セクション -->
-                <section class="custom-section">
+                <section class="custom-section" style="position: relative;">
                     <h2 class="section-title">他の好きなゲーム</h2>
                     <img src="./assets/images/FF7.jpeg" alt="FF7" class="img-fluid rounded mb-3" style="max-width: 250px;">
                     <img src="./assets/images/shingeki2.jpg" alt="進撃の巨人2" class="img-fluid rounded mb-3" style="max-width: 200px;">
                     <img src="./assets/images/sutare.jpeg" alt="崩壊スターレイル" class="img-fluid rounded mb-3" style="max-width: 500px;">
+
+                    <div class="bottom-text" style="
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        font-size: 30px;
+                        color: #1F3A93;
+                        text-align: right;">
+                        など...
+                    </div>
                 </section>
 
                 <div class="card-container">
