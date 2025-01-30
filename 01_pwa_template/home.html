@@ -18,21 +18,21 @@
     <link rel="stylesheet" href="./assets/css/custom.css">
     <style>
         body {
-            background: linear-gradient(
-            135deg,
-            #81d4fa 0%,   /* 明るい青 */
-            #b3e5fc 25%,  /* パステルブルー */
-            #e1f5fe 50%,  /* 淡い空色 */
-            #bbdefb 75%,  /* 淡い水色 */
-            #90caf9 100%  /* 少し濃い青 */
-        );
-
+            background: linear-gradient(135deg, rgb(0, 174, 255), #31beff, #70d2ff, #8fccff, #baf8ff);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             color: #1F3A93;
-            display: flex; /* Flexboxの有効化 */
-            justify-content: center; /* 水平方向に中央揃え */
-            align-items: center; /* 垂直方向に中央揃え */
-            min-height: 100vh; /* ビューポート全体を占める */
-            margin: 0; /* 余白をリセット */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .container {
             text-align: center; /* コンテンツを中央揃え */
