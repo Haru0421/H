@@ -18,21 +18,18 @@
     <link rel="stylesheet" href="./assets/css/custom.css">
     <style>
         body {
-            background: linear-gradient(135deg, rgb(0, 174, 255), #31beff, #70d2ff, #8fccff, #baf8ff);
-            background-size: 400% 400%;
-            animation: gradientAnimation 15s ease infinite;
-            color: #1F3A93;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
+            background: linear-gradient(
+            135deg,
+            #81d4fa 0%,   /* 明るい青 */
+            #b3e5fc 25%,  /* パステルブルー */
+            #e1f5fe 50%,  /* 淡い空色 */
+            #bbdefb 75%,  /* 淡い水色 */
+            #90caf9 100%  /* 少し濃い青 */
+        );
 
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            font-family: Arial, sans-serif;
+            color: #1F3A93;
+            font-size: 18px; /* 全体のベースフォントサイズを調整 */
         }
         .navbar { background-color: #a7ccf6; }
         .section-title {
